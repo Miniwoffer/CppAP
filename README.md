@@ -5,4 +5,4 @@ arguments:
     varName="Var value"
     varName2=<varvalue>
 
-See CppAP_Test.cpp for example immplementation.
+See CppAP_Test.cpp for example implementation.
