@@ -1,7 +1,13 @@
 cmake_minimum_required(VERSION 3.6)
-project(argument_parser)
+project(CppAP)
 
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_FLAGS "-Wall -std=c++14 -lBox2D -lsfml-system -lsfml-window -lsfml-graphics -lsfml-network -lsfml-audio")
 
-set(SOURCE_FILES library.h)
-add_library(argument_parser ${SOURCE_FILES})
+set(SOURCE_FILES CppAP_library.h CppAP_Test.cpp)
+file(GLOB SOURCES
+        CppAP_Test.cpp
+        CppAP_library.h
+        )
+
+add_executable(CppAP ${SOURCES})
