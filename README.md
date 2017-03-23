@@ -1,11 +1,9 @@
 # CppAP - Cpp Argument Parser
 A header only argument parser
-arguments:
 
+commandline example:
 ```
--flag
-varName="Var value"
-varName2=<varvalue>
+ ./appname -flag -otherflag varName="Var value" varName2=10
 ```
 
 See CppAP_Test.cpp for example implementation.
