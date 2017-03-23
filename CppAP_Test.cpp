@@ -4,8 +4,8 @@
 #include "CppAP_library.hpp"
 
 int main(int argc, char *args[]) {
-    auto flags = std::make_shared<std::map<std::string, bool>>();
-    auto arguments = std::make_shared<std::map<std::string, std::string>>();
+    auto flags = CppAP::make_flag_map();
+    auto arguments = CppAP::make_argument_map();
 
     //creates values at test and Mystring, by trying to access it.
     (*flags)["test"];
